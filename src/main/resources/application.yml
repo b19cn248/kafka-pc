@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=sync_db&binaryTransfer=true&reWriteBatchedInserts=true
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+server:
+  port: 8183
