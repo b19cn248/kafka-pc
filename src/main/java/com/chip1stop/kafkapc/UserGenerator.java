@@ -8,6 +8,7 @@ import java.util.UUID;
 
 public class UserGenerator {
 
+
     public static List<User> generateFakeUsers(int count) {
         List<User> users = new ArrayList<>();
         Faker faker = new Faker();
@@ -21,6 +22,11 @@ public class UserGenerator {
         }
 
         return users;
+    }
+
+    public static String generateFullName() {
+        Faker faker = new Faker();
+        return faker.name().fullName();
     }
 
 }

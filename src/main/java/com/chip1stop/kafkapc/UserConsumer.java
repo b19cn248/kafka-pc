@@ -37,7 +37,6 @@ public class UserConsumer {
         try {
             User user = deserializeUserList(message);
             if (user != null) {
-//                log.info("Processing user with id : {}", user.getId());
                 bufferList.add(user);
 
                 if (user.getName().equals("HieuPOC")) {
